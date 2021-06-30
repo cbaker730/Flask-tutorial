@@ -12,4 +12,15 @@ Verify Python v3.8.5 is installed
     Python3.8.5
     
 
-test
+Run 01 to set up docker, docker-compose
+Run 02 to set up a mysql container
+
+Connect to docker with
+
+    mysql -h 127.0.0.1 -P 3306 -u root -p
+
+Load employee data (source: https://github.com/datacharmer/test_db )
+
+    mysql -h 127.0.0.1 -P 3306 -u root -p < employees.sql
+
+Create app
